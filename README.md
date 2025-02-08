@@ -39,11 +39,12 @@ If performing detection on your own logs, ensure they are in CSV format and cont
 * pid
 
 Additionally, configure the following parameters:
-** In cfg.ini:
+
+**In cfg.ini:**
 * simulation = False
 * is_needed = False
 
-** In detect.ipynb:
+**In detect.ipynb:**
 * log_testcases_folder = The directory where the logs are stored
 * event_log_b = The full path to the log before the change. 
 * event_log_a = The full path to the log after the change.
