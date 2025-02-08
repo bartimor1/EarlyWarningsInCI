@@ -1,7 +1,7 @@
 # EarlyWarningsInCI
-Detection of response time degradation in CI using process mining techniques on the software event logs
-This project demonstrating our method for identifying and analyzing performance degradation due to code changes. 
-The method receives two event logs as input: one is the execution log of the base version (before the code change) and the other is the execu-tion log of the version under test (after the change). We assume that the two logs have undergone pre-processing and activity name matching to ensure accurate identification of events and traces.
+Detection of response time degradation in CI using process mining techniques on the software event logs.
+This project demonstrating our thesis method for identifying and analyzing performance degradation due to code changes. 
+The method receives two event logs as input: one is the execution log of the base version (before the code change) and the other is the execution log of the version under test (after the change). We assume that the two logs have undergone pre-processing and activity name matching to ensure accurate identification of events and traces.
 
 ## Prerequisite:
 Ensure the following Python modules are installed before running the detection method:
@@ -48,5 +48,7 @@ Additionally, configure the following parameters:
 * log_testcases_folder = The directory where the logs are stored
 * event_log_b = The full path to the log before the change. 
 * event_log_a = The full path to the log after the change.
+
+**Note**: we assume that the two logs have undergone pre-processing and activity name matching to en-sure accurate identification of events and traces. These can be achieved by using approaches for parsing and mining log messages, e.g., SLCT, IPLoM, LKE, and LogSig 
 
 To execute the detection, run the `detect.ipynb` file. The result report will be generated and stored in the `Results` folder.
